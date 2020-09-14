@@ -18,7 +18,3 @@ class TestSetUpTearDown(TestCase):
         n = 3
         actual = increment.inc2(self.x, n=3)
         self.assertEqual(self.x + n, actual, "what!")
-
-    def test_should_raise_exception(self):
-        with self.assertRaises(TypeError):
-            increment.inc2(self.x, n="xyz")
